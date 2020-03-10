@@ -11,9 +11,9 @@ class Bot:
 
     def get_updates(self, new_offset):
         """
-
-        :param new_offset:
-        :return:
+        Use this method to receive incoming updates. It returns a json list of Update objects.
+        :param new_offset:  Identifier of the first update to be returned.
+        :return:            json result
         """
         method = 'getUpdates'
         params = {'offset': new_offset}
